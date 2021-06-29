@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -26,10 +27,31 @@
   <title>chat_app</title>
   <link rel="manifest" href="manifest.json">
 </head>
+
 <body>
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyC_oaUxhTYXDiJkMSYYeeW-r2Z7e2jzVB8",
+      authDomain: "flutter-chat-6084e.firebaseapp.com",
+      projectId: "flutter-chat-6084e",
+      storageBucket: "flutter-chat-6084e.appspot.com",
+      messagingSenderId: "616100465986",
+      appId: "1:616100465986:web:c8ea2af1093a5cc723ccdb",
+      measurementId: "G-8D2T0FRTEH"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
   <script>
     var serviceWorkerVersion = null;
     var scriptLoaded = false;
@@ -94,5 +116,7 @@
       loadMainDartJs();
     }
   </script>
+
 </body>
+
 </html>
