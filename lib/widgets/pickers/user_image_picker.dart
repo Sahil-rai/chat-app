@@ -55,6 +55,7 @@ class _UserImagePickerState extends State<UserImagePicker> {
           backgroundColor: Colors.grey,
           backgroundImage:
               _pickedImage != null ? FileImage(_pickedImage) : null,
+          
         ),
         FlatButton.icon(
             textColor: Theme.of(context).primaryColor,

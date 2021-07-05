@@ -13,15 +13,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'InfyGram',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primaryColor: Colors.black,
         backgroundColor: Colors.black,
-        accentColor: Colors.indigo,
+        accentColor: Colors.blueAccent,
         accentColorBrightness: Brightness.dark,
         buttonTheme: ButtonTheme.of(context).copyWith(
-          buttonColor: Colors.indigo,
+          buttonColor: Colors.black,
+          padding: EdgeInsets.all(15),
           textTheme: ButtonTextTheme.primary,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(10),
           ),
         ),
       ),
