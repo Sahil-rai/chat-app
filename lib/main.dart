@@ -11,14 +11,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Chat',
+      title: 'InfyGram',
       theme: ThemeData(
-        primarySwatch: Colors.pink,
-        backgroundColor: Colors.pink,
-        accentColor: Colors.purple,
+        primarySwatch: Colors.blue,
+        backgroundColor: Colors.black,
+        accentColor: Colors.indigo,
         accentColorBrightness: Brightness.dark,
         buttonTheme: ButtonTheme.of(context).copyWith(
-          buttonColor: Colors.pink,
+          buttonColor: Colors.indigo,
           textTheme: ButtonTextTheme.primary,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
